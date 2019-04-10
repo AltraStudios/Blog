@@ -1,0 +1,26 @@
+@model ASP.NET_MVC_Tutorials.Models.ContactMessage
+@{
+Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+  </head>
+  <body>
+    <div>
+      <h1>Thanks @ViewBag.Name for your message</h1>
+      @if (Model.IsSatisfied == true)
+      {
+        @: We are glad to server you.
+      }
+      else
+      {
+        @: Sorry, we will work harder to satisfy you.
+      }
+    </div>
+  </body>
+</html>
