@@ -1,0 +1,12 @@
+@using (Html.BeginForm())
+{
+  @Html.AntiForgeryToken()
+
+  <div class="form-horizontal">
+    <h4>ContactMessage</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    …
+    …
+  </div>
+}
